@@ -16,7 +16,7 @@ const NavBar = () => {
 
     return (
         <nav className='flex space-x-6 border-b mb-5 px-5 h-14 items-center'>
-            <Link href="/"><FaTasks /></Link>
+            <Link href="/"><FaTasks className="hover:text-indigo-400 transition-colors" /></Link>
             <ul className='flex space-x-6'>
                 {links.map(link =>
                     <Link 
@@ -36,3 +36,5 @@ const NavBar = () => {
 }
 
 export default NavBar
+
+// https://www.youtube.com/watch?v=J9sfR6HN6BY minuut 27:50
